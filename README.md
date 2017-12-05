@@ -1,5 +1,6 @@
 # AMU
 ## AMU - Automated Mac Updater
+<p align="center"><img src="AMU.png" alt="mas-cli" width="600" height="auto"></p>
 
 **AMU** is a Shell script to **quickly update your Mac** (macOS updates & Mac App Store downloaded apps).
 
