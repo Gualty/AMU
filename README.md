@@ -13,6 +13,7 @@
 1) Open Terminal
 2) Set correct permission **chmod +x macupdate.sh** (Only the first time before the first execution)
 3) Execute AMU **./macupdater.sh**
+4) Reboot the Mac if required
 
 **AMU did not require sudo access**
 
