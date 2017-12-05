@@ -15,3 +15,7 @@
 3) Execute AMU **./macupdater.sh**
 
 **AMU did not require sudo access**
+
+## Why use AMU?
+
+After reading different [blog posts](https://9to5mac.com/2017/07/20/how-to-update-mac-using-terminal/) telling that using *softwareupdate* using Terminal is much faster than update macOS using the Mac App Store, I decided to automatize the operation.
