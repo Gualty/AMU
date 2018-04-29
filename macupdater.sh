@@ -1,6 +1,6 @@
 #!/bin/sh
 	clear
-	ver="1.0"
+	ver="1.1"
 	printf "**			Automated Mac Updater v. $ver 	  **\n"
 	printf "   		           developed by Gualty    \n"
 	printf "   		         http://github.com/Gualty    \n"
@@ -21,12 +21,12 @@
 	read choice
 	# Execute the right operation based on the choice of the user
 	case "$choice" in
-		1) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\n";;
-		2) printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\n";;
-		3) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdate complete!\n";;
+		1) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
+		2) printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
+		3) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		4) echo "\nBye bye =)\n"; exit 0;;
 		0) echo "\nBye bye =)\n"; exit 0;;
 		q) echo "\nBye bye =)\n"; exit 0;;
 		quit) echo "\nBye bye =)\n"; exit 0;;
-		*) echo "\nNot valid command\nPress any key to continue";read tasto;$0 $1 $2 $3 $4 $5;;
+		*) echo "\nCommand not valid\nPress any key to continue";read tasto;$0 $1 $2 $3 $4 $5;;
 	esac
