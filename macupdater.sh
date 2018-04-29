@@ -1,6 +1,6 @@
 #!/bin/sh
 	clear
-	ver="1.1"
+	ver="1.2"
 	printf "**			Automated Mac Updater v. $ver 	  **\n"
 	printf "   		           developed by Gualty    \n"
 	printf "   		         http://github.com/Gualty    \n"
@@ -16,7 +16,8 @@
 	printf "1) Update All (Apps & macOS)\n"
 	printf "2) Update Apps\n"
 	printf "3) Update macOS\n"
-	printf "4) Quit\n"
+	printf "4) Update mas\n"
+	printf "5) Quit\n"
 	printf "Choise: "
 	read choice
 	# Execute the right operation based on the choice of the user
@@ -24,7 +25,8 @@
 		1) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		2) printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		3) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
-		4) echo "\nBye bye =)\n"; exit 0;;
+		4) printf "\nUpdating mas\n";brew upgrade mas;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
+		5) echo "\nBye bye =)\n"; exit 0;;
 		0) echo "\nBye bye =)\n"; exit 0;;
 		q) echo "\nBye bye =)\n"; exit 0;;
 		quit) echo "\nBye bye =)\n"; exit 0;;
