@@ -22,7 +22,7 @@
 	read choice
 	# Execute the right operation based on the choice of the user
 	case "$choice" in
-		1) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
+		1) printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		2) printf "\nUpdating Apps\n";mas upgrade;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		3) printf "\nUpdating macOS\n";softwareupdate -ia;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
 		4) printf "\nUpdating mas\n";brew upgrade mas;printf "\nUpdate complete!\nPress a button to continue...\n";read -n 1 -s;./macupdater.sh;;
