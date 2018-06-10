@@ -1,6 +1,6 @@
 #!/bin/sh
 	clear
-	ver="1.2"
+	ver="1.2.1"
 	printf "**			Automated Mac Updater v. $ver 	  **\n"
 	printf "   		           developed by Gualty    \n"
 	printf "   		         http://github.com/Gualty    \n"
